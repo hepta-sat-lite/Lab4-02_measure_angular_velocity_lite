@@ -3,7 +3,7 @@
 #include "HEPTA_SENSOR.h"
 HEPTA_EPS eps(PA_0,PA_4);
 HEPTA_SENSOR sensor(PA_7,PB_7,PB_6,0xD0);
-Serial pc(USBTX,USBRX,9600);
+RawSerial pc(USBTX,USBRX,9600);
 int main()
 {   
     float gx,gy,gz;
