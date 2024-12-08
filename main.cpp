@@ -11,7 +11,7 @@ int main()
     sensor.set_up();
     for(int i=0;i<50;i++){
         sensor.sen_gyro(&gx,&gy,&gz);
-        pc.printf("%f,%f,%f\r\n",gx,gy,gz);
+        pc.printf("gyro: %f,%f,%f\r\n",gx,gy,gz);
         wait_ms(1000);
     }
 }
